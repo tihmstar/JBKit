@@ -18,6 +18,18 @@
 		87168C332B4C807C00DC6AB9 /* JBException.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C312B4C807C00DC6AB9 /* JBException.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C342B4C930F00DC6AB9 /* JBTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2D2B4C75D900DC6AB9 /* JBTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C352B4C931700DC6AB9 /* JBMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CCB9AB22B4C88A80040F401 /* launch.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9AB12B4C88A80040F401 /* launch.h */; };
+		8CCB9AC02B4C88AC0040F401 /* connection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9AB42B4C88AC0040F401 /* connection.h */; };
+		8CCB9AC12B4C88AC0040F401 /* endpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9AB52B4C88AC0040F401 /* endpoint.h */; };
+		8CCB9AC22B4C88AC0040F401 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9AB62B4C88AC0040F401 /* debug.h */; };
+		8CCB9AC32B4C88AC0040F401 /* availability.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9AB72B4C88AC0040F401 /* availability.h */; };
+		8CCB9AC42B4C88AC0040F401 /* rich_error.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9AB82B4C88AC0040F401 /* rich_error.h */; };
+		8CCB9AC52B4C88AC0040F401 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9AB92B4C88AC0040F401 /* private.h */; };
+		8CCB9AC62B4C88AC0040F401 /* xpc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9ABA2B4C88AC0040F401 /* xpc.h */; };
+		8CCB9AC72B4C88AC0040F401 /* session.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9ABB2B4C88AC0040F401 /* session.h */; };
+		8CCB9AC82B4C88AC0040F401 /* XPC.apinotes in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB9ABC2B4C88AC0040F401 /* XPC.apinotes */; };
+		8CCB9AC92B4C88AC0040F401 /* activity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9ABE2B4C88AC0040F401 /* activity.h */; };
+		8CCB9ACA2B4C88AC0040F401 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCB9ABF2B4C88AC0040F401 /* base.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +45,19 @@
 		87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBMacros.h; sourceTree = "<group>"; };
 		87168C302B4C807C00DC6AB9 /* JBException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBException.cpp; sourceTree = "<group>"; };
 		87168C312B4C807C00DC6AB9 /* JBException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JBException.hpp; sourceTree = "<group>"; };
+		8CCB9AB12B4C88A80040F401 /* launch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = launch.h; sourceTree = "<group>"; };
+		8CCB9AB42B4C88AC0040F401 /* connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connection.h; sourceTree = "<group>"; };
+		8CCB9AB52B4C88AC0040F401 /* endpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endpoint.h; sourceTree = "<group>"; };
+		8CCB9AB62B4C88AC0040F401 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		8CCB9AB72B4C88AC0040F401 /* availability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = availability.h; sourceTree = "<group>"; };
+		8CCB9AB82B4C88AC0040F401 /* rich_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rich_error.h; sourceTree = "<group>"; };
+		8CCB9AB92B4C88AC0040F401 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		8CCB9ABA2B4C88AC0040F401 /* xpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xpc.h; sourceTree = "<group>"; };
+		8CCB9ABB2B4C88AC0040F401 /* session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = session.h; sourceTree = "<group>"; };
+		8CCB9ABC2B4C88AC0040F401 /* XPC.apinotes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.apinotes; path = XPC.apinotes; sourceTree = "<group>"; };
+		8CCB9ABD2B4C88AC0040F401 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		8CCB9ABE2B4C88AC0040F401 /* activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activity.h; sourceTree = "<group>"; };
+		8CCB9ABF2B4C88AC0040F401 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +90,7 @@
 		87168C192B4C710A00DC6AB9 /* JBKit */ = {
 			isa = PBXGroup;
 			children = (
+				8CCB9AB02B4C88750040F401 /* include */,
 				87168C1A2B4C710A00DC6AB9 /* JBKit.h */,
 				87168C2A2B4C720500DC6AB9 /* JBOffsets.hpp */,
 				87168C292B4C720500DC6AB9 /* JBOffsets.cpp */,
@@ -80,6 +106,34 @@
 			path = JBKit;
 			sourceTree = "<group>";
 		};
+		8CCB9AB02B4C88750040F401 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB9AB32B4C88AC0040F401 /* xpc */,
+				8CCB9AB12B4C88A80040F401 /* launch.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8CCB9AB32B4C88AC0040F401 /* xpc */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB9AB42B4C88AC0040F401 /* connection.h */,
+				8CCB9AB52B4C88AC0040F401 /* endpoint.h */,
+				8CCB9AB62B4C88AC0040F401 /* debug.h */,
+				8CCB9AB72B4C88AC0040F401 /* availability.h */,
+				8CCB9AB82B4C88AC0040F401 /* rich_error.h */,
+				8CCB9AB92B4C88AC0040F401 /* private.h */,
+				8CCB9ABA2B4C88AC0040F401 /* xpc.h */,
+				8CCB9ABB2B4C88AC0040F401 /* session.h */,
+				8CCB9ABC2B4C88AC0040F401 /* XPC.apinotes */,
+				8CCB9ABD2B4C88AC0040F401 /* module.modulemap */,
+				8CCB9ABE2B4C88AC0040F401 /* activity.h */,
+				8CCB9ABF2B4C88AC0040F401 /* base.h */,
+			);
+			path = xpc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -88,6 +142,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				87168C242B4C71B400DC6AB9 /* JBExploit.hpp in Headers */,
+				8CCB9AC42B4C88AC0040F401 /* rich_error.h in Headers */,
+				8CCB9AB22B4C88A80040F401 /* launch.h in Headers */,
+				8CCB9AC12B4C88AC0040F401 /* endpoint.h in Headers */,
+				8CCB9AC02B4C88AC0040F401 /* connection.h in Headers */,
+				8CCB9ACA2B4C88AC0040F401 /* base.h in Headers */,
+				8CCB9AC32B4C88AC0040F401 /* availability.h in Headers */,
+				8CCB9AC62B4C88AC0040F401 /* xpc.h in Headers */,
+				8CCB9AC52B4C88AC0040F401 /* private.h in Headers */,
+				8CCB9AC72B4C88AC0040F401 /* session.h in Headers */,
+				8CCB9AC92B4C88AC0040F401 /* activity.h in Headers */,
+				8CCB9AC22B4C88AC0040F401 /* debug.h in Headers */,
 				87168C2C2B4C720500DC6AB9 /* JBOffsets.hpp in Headers */,
 				87168C342B4C930F00DC6AB9 /* JBTypes.h in Headers */,
 				87168C282B4C71DD00DC6AB9 /* JBPrimitive.hpp in Headers */,
@@ -155,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CCB9AC82B4C88AC0040F401 /* XPC.apinotes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +385,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_CFLAGS = "-I./JBKit/include";
 				PRODUCT_BUNDLE_IDENTIFIER = net.tihmstar.JBKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -348,6 +415,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_CFLAGS = "-I./JBKit/include";
 				PRODUCT_BUNDLE_IDENTIFIER = net.tihmstar.JBKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
