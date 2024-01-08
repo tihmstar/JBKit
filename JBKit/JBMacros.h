@@ -43,4 +43,8 @@
 #define safeClose(fd) ({if (fd != -1) {close(fd); fd=-1;}})
 #define safeCloseCustom(fd,func) ({if (fd != -1) {func(fd); fd=-1;}})
 
+#ifdef __cplusplus
+#   define safeDelete(ptr) ({if (ptr) {delete ptr; ptr=NULL;}})
+#endif //__cplusplus
+
 #endif /* JBMacros_h */
