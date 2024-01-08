@@ -18,6 +18,7 @@
 		87168C332B4C807C00DC6AB9 /* JBException.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C312B4C807C00DC6AB9 /* JBException.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C342B4C930F00DC6AB9 /* JBTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2D2B4C75D900DC6AB9 /* JBTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C352B4C931700DC6AB9 /* JBMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		874CABED2B4CA35E0002EC15 /* libxpc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 874CABEB2B4CA2A80002EC15 /* libxpc.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBMacros.h; sourceTree = "<group>"; };
 		87168C302B4C807C00DC6AB9 /* JBException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBException.cpp; sourceTree = "<group>"; };
 		87168C312B4C807C00DC6AB9 /* JBException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JBException.hpp; sourceTree = "<group>"; };
+		874CABEB2B4CA2A80002EC15 /* libxpc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxpc.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/system/libxpc.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874CABED2B4CA35E0002EC15 /* libxpc.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 			children = (
 				87168C192B4C710A00DC6AB9 /* JBKit */,
 				87168C182B4C710A00DC6AB9 /* Products */,
+				874CABEA2B4CA2A80002EC15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +82,14 @@
 				87168C252B4C71DD00DC6AB9 /* JBPrimitive.cpp */,
 			);
 			path = JBKit;
+			sourceTree = "<group>";
+		};
+		874CABEA2B4CA2A80002EC15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				874CABEB2B4CA2A80002EC15 /* libxpc.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,13 +321,16 @@
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/include";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/lib";
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -338,13 +353,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/include";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/lib";
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";

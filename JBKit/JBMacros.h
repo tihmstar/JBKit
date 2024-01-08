@@ -45,6 +45,16 @@
 
 #ifdef __cplusplus
 #   define safeDelete(ptr) ({if (ptr) {delete ptr; ptr=NULL;}})
+class guard{
+    std::function<void()> _f;
+public:
+    guard(std::function<void()> cleanup) : _f(cleanup) {}
+    guard(const guard&) = delete; //delete copy constructor
+    guard(guard &&o) = delete; //move constructor
+    
+    ~guard(){_f();}
+};
+# define cleanup(f) guard _cleanup(f);
 #endif //__cplusplus
 
 #endif /* JBMacros_h */
