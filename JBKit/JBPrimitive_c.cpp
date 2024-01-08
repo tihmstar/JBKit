@@ -266,3 +266,13 @@ kptr_t JBPrimitive_primitive_execute(JBPrimitive_ctx_t ctx, kptr_t kaddr, callar
         return 0;
     }
 }
+
+extern "C"
+kptr_t JBPrimitive_primitive_getKernelBase(JBPrimitive_ctx_t ctx){
+    JBPrimitive *obj = (JBPrimitive *)ctx;
+    try {
+        return obj->getKernelBase();
+    } catch (...) {
+        return 0;
+    }
+}

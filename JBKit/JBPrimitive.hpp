@@ -52,6 +52,8 @@ public:
 
     virtual kptr_t execute(kptr_t kaddr, callargs_t args = {});
     
+    virtual kptr_t getKernelBase();
+
 #pragma mark transfer
     virtual void sendPrimitive(mach_port_t dst); //port with send right
     virtual void recvPrimitive(mach_port_t src); //port with recv right

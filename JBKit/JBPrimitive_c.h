@@ -56,6 +56,9 @@ int JBPrimitive_primitive_write32(JBPrimitive_ctx_t ctx, kptr_t kaddr, uint32_t 
 size_t JBPrimitive_primitive_write_generic(JBPrimitive_ctx_t ctx, kptr_t kaddr, const void *srcbuf, size_t size, BOOLEAN honorSizeLimit);
 
 kptr_t JBPrimitive_primitive_execute(JBPrimitive_ctx_t ctx, kptr_t kaddr, callargs_t args);
+
+kptr_t JBPrimitive_primitive_getKernelBase(JBPrimitive_ctx_t ctx);
+
 #ifdef __cplusplus
 };
 #endif //__cplusplus

@@ -238,6 +238,10 @@ kptr_t JBPrimitive::execute(kptr_t kaddr, callargs_t args){
     retcustomerror(JBException_primitive_unavailable, "execute is not implemented by the primitive");
 }
 
+kptr_t JBPrimitive::getKernelBase(){
+    retcustomerror(JBException_primitive_unavailable, "getKernelBase is not implemented by the primitive");
+}
+
 #pragma mark transfer
 void JBPrimitive::sendPrimitive(mach_port_t dst){
     retcustomerror(JBException_primitive_unavailable, "sendPrimitive is not implemented by the primitive");
