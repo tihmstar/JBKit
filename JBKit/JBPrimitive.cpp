@@ -89,7 +89,7 @@ uint32_t JBPrimitive::read32(kptr_t kaddr){
     return retval;
 }
 
-size_t JBPrimitive::read_generic(kptr_t kaddr, void *dstbuf, size_t size, bool honorSizeLimit){
+size_t JBPrimitive::read_generic(kptr_t kaddr, void *dstbuf, size_t size, BOOLEAN honorSizeLimit){
     bool hasr64 = hasRead64();
     bool hasr32 = hasRead32();
     size_t didRead = 0;
@@ -171,7 +171,7 @@ void JBPrimitive::write32(kptr_t kaddr, uint32_t val){
     }
 }
 
-size_t JBPrimitive::write_generic(kptr_t kaddr, const void *srcbuf, size_t size, bool honorSizeLimit){
+size_t JBPrimitive::write_generic(kptr_t kaddr, const void *srcbuf, size_t size, BOOLEAN honorSizeLimit){
     bool hasw64 = hasWrite64();
     bool hasw32 = hasWrite32();
     size_t didWrite = 0;
@@ -231,6 +231,6 @@ size_t JBPrimitive::write_generic(kptr_t kaddr, const void *srcbuf, size_t size,
     return didWrite;
 }
 
-void JBPrimitive::execute(kptr_t kaddr, std::vector<kptr_t> args){
+void JBPrimitive::execute(kptr_t kaddr, callargs_t args){
     retcustomerror(JBException_primitive_unavailable, "execute is not implemented by the primitive");
 }

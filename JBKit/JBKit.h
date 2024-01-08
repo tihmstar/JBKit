@@ -9,3 +9,5 @@
 #include <JBKit/JBOffsets.hpp>
 #include <JBKit/JBPrimitive.hpp>
 #include <JBKit/JBException.hpp>
+#include <JBKit/JBMacros.h>
+#include <JBKit/JBTypes.h>

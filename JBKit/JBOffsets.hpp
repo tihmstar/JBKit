@@ -7,6 +7,7 @@
 
 #ifndef JBOffsets_hpp
 #define JBOffsets_hpp
+#ifdef __cplusplus
 
 #include <JBKit/JBTypes.h>
 #include <mach/mach.h>
@@ -31,5 +32,6 @@ public:
 
 
 }
+#endif //__cplusplus
 
 #endif /* JBOffsets_hpp */

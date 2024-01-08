@@ -7,6 +7,7 @@
 
 #ifndef JBException_hpp
 #define JBException_hpp
+#ifdef __cplusplus
 
 #include <JBKit/JBMacros.h>
 
@@ -85,5 +86,5 @@ EASY_EXCEPTION(JBException_exploit_failed_needs_reboot, JBException);
 
 };
 
-
+#endif //__cplusplus
 #endif /* JBException_hpp */
