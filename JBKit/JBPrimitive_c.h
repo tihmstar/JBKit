@@ -29,8 +29,8 @@ void JBPrimitive_freeRegisteredPrimitivesList(char **list);
 JBPrimitive_ctx_t JBPrimitive_getPrimitiveWithName(const char *name);
 
 #pragma mark use #pragma mark use exploit
-int JBPrimitive_primitive_init(JBPrimitive_ctx_t ctx, JBOffset_ctx_t offsets, readfunc_t func_read, writefunc_t func_write, execfunc_t func_exec);
-int JBPrimitive_primitive_cleanup(JBPrimitive_ctx_t ctx);
+int JBPrimitive_primitive_initPrimitive(JBPrimitive_ctx_t ctx, JBOffset_ctx_t offsets, readfunc_t func_read, writefunc_t func_write, execfunc_t func_exec);
+int JBPrimitive_primitive_cleanupPrimitive(JBPrimitive_ctx_t ctx);
 
 const char * JBPrimitive_primitive_primitiveName(JBPrimitive_ctx_t ctx);
 

@@ -24,8 +24,8 @@ public:
     virtual ~JBPrimitive();
     
 #pragma mark public exploit init/cleanup
-    virtual bool init(JBOffsets offsets, readfunc_t func_read, writefunc_t func_write, execfunc_t func_exec = NULL) = 0;
-    virtual void cleanup() = 0;
+    virtual bool initPrimitive(JBOffsets offsets, readfunc_t func_read, writefunc_t func_write, execfunc_t func_exec = NULL) = 0;
+    virtual void cleanupPrimitive() = 0;
     
 #pragma mark infos
     virtual const char *primitiveName() = 0;

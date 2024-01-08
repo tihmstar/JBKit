@@ -51,22 +51,22 @@ JBPrimitive_ctx_t JBPrimitive_getPrimitiveWithName(const char *name){
 #pragma mark use #pragma mark use exploit
 
 extern "C"
-int JBPrimitive_primitive_init(JBPrimitive_ctx_t ctx, JBOffset_ctx_t offsets, readfunc_t func_read, writefunc_t func_write, execfunc_t func_exec){
+int JBPrimitive_primitive_initPrimitive(JBPrimitive_ctx_t ctx, JBOffset_ctx_t offsets, readfunc_t func_read, writefunc_t func_write, execfunc_t func_exec){
     JBPrimitive *obj = (JBPrimitive *)ctx;
     JBOffsets *obj_offsets = (JBOffsets *)offsets;
     
     try {
-        return obj->init(*obj_offsets, func_read, func_write, func_exec) ? 0 : -2;
+        return obj->initPrimitive(*obj_offsets, func_read, func_write, func_exec) ? 0 : -2;
     } catch (...) {
         return -1;
     }
 }
 
 extern "C"
-int JBPrimitive_primitive_cleanup(JBPrimitive_ctx_t ctx){
+int JBPrimitive_primitive_cleanupPrimitive(JBPrimitive_ctx_t ctx){
     JBPrimitive *obj = (JBPrimitive *)ctx;
     try {
-        obj->cleanup();
+        obj->cleanupPrimitive();
         return 0;
     } catch (...) {
         return -1;
