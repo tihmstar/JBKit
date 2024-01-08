@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		87168C1B2B4C710A00DC6AB9 /* JBKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C1A2B4C710A00DC6AB9 /* JBKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C232B4C71B400DC6AB9 /* JBExploit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87168C212B4C71B400DC6AB9 /* JBExploit.cpp */; };
-		87168C242B4C71B400DC6AB9 /* JBExploit.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C222B4C71B400DC6AB9 /* JBExploit.hpp */; };
+		87168C242B4C71B400DC6AB9 /* JBExploit.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C222B4C71B400DC6AB9 /* JBExploit.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C272B4C71DD00DC6AB9 /* JBPrimitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87168C252B4C71DD00DC6AB9 /* JBPrimitive.cpp */; };
-		87168C282B4C71DD00DC6AB9 /* JBPrimitive.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C262B4C71DD00DC6AB9 /* JBPrimitive.hpp */; };
+		87168C282B4C71DD00DC6AB9 /* JBPrimitive.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C262B4C71DD00DC6AB9 /* JBPrimitive.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C2B2B4C720500DC6AB9 /* JBOffsets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87168C292B4C720500DC6AB9 /* JBOffsets.cpp */; };
-		87168C2C2B4C720500DC6AB9 /* JBOffsets.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2A2B4C720500DC6AB9 /* JBOffsets.hpp */; };
+		87168C2C2B4C720500DC6AB9 /* JBOffsets.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2A2B4C720500DC6AB9 /* JBOffsets.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		87168C322B4C807C00DC6AB9 /* JBException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87168C302B4C807C00DC6AB9 /* JBException.cpp */; };
+		87168C332B4C807C00DC6AB9 /* JBException.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87168C312B4C807C00DC6AB9 /* JBException.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		87168C342B4C930F00DC6AB9 /* JBTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2D2B4C75D900DC6AB9 /* JBTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87168C352B4C931700DC6AB9 /* JBMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,9 @@
 		87168C292B4C720500DC6AB9 /* JBOffsets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBOffsets.cpp; sourceTree = "<group>"; };
 		87168C2A2B4C720500DC6AB9 /* JBOffsets.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JBOffsets.hpp; sourceTree = "<group>"; };
 		87168C2D2B4C75D900DC6AB9 /* JBTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBTypes.h; sourceTree = "<group>"; };
+		87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBMacros.h; sourceTree = "<group>"; };
+		87168C302B4C807C00DC6AB9 /* JBException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBException.cpp; sourceTree = "<group>"; };
+		87168C312B4C807C00DC6AB9 /* JBException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JBException.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,9 @@
 				87168C2A2B4C720500DC6AB9 /* JBOffsets.hpp */,
 				87168C292B4C720500DC6AB9 /* JBOffsets.cpp */,
 				87168C2D2B4C75D900DC6AB9 /* JBTypes.h */,
+				87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */,
+				87168C312B4C807C00DC6AB9 /* JBException.hpp */,
+				87168C302B4C807C00DC6AB9 /* JBException.cpp */,
 				87168C222B4C71B400DC6AB9 /* JBExploit.hpp */,
 				87168C212B4C71B400DC6AB9 /* JBExploit.cpp */,
 				87168C262B4C71DD00DC6AB9 /* JBPrimitive.hpp */,
@@ -79,7 +89,10 @@
 			files = (
 				87168C242B4C71B400DC6AB9 /* JBExploit.hpp in Headers */,
 				87168C2C2B4C720500DC6AB9 /* JBOffsets.hpp in Headers */,
+				87168C342B4C930F00DC6AB9 /* JBTypes.h in Headers */,
 				87168C282B4C71DD00DC6AB9 /* JBPrimitive.hpp in Headers */,
+				87168C352B4C931700DC6AB9 /* JBMacros.h in Headers */,
+				87168C332B4C807C00DC6AB9 /* JBException.hpp in Headers */,
 				87168C1B2B4C710A00DC6AB9 /* JBKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +168,7 @@
 				87168C232B4C71B400DC6AB9 /* JBExploit.cpp in Sources */,
 				87168C2B2B4C720500DC6AB9 /* JBOffsets.cpp in Sources */,
 				87168C272B4C71DD00DC6AB9 /* JBPrimitive.cpp in Sources */,
+				87168C322B4C807C00DC6AB9 /* JBException.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +307,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

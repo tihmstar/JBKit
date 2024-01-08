@@ -8,7 +8,7 @@
 #ifndef JBOffsets_hpp
 #define JBOffsets_hpp
 
-#include "JBTypes.h"
+#include <JBKit/JBTypes.h>
 #include <mach/mach.h>
 
 namespace JBKit {
