@@ -19,6 +19,12 @@
 		87168C342B4C930F00DC6AB9 /* JBTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2D2B4C75D900DC6AB9 /* JBTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87168C352B4C931700DC6AB9 /* JBMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		874CABED2B4CA35E0002EC15 /* libxpc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 874CABEB2B4CA2A80002EC15 /* libxpc.tbd */; };
+		878171D42B4CA7CD00F7399C /* JBExploit_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878171D22B4CA7CD00F7399C /* JBExploit_c.cpp */; };
+		878171D52B4CA7CD00F7399C /* JBExploit_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 878171D32B4CA7CD00F7399C /* JBExploit_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		878171D82B4CAA4400F7399C /* JBOffsets_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878171D62B4CAA4400F7399C /* JBOffsets_c.cpp */; };
+		878171D92B4CAA4400F7399C /* JBOffsets_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 878171D72B4CAA4400F7399C /* JBOffsets_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		878171DC2B4CAF9500F7399C /* JBPrimitive_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878171DA2B4CAF9500F7399C /* JBPrimitive_c.cpp */; };
+		878171DD2B4CAF9500F7399C /* JBPrimitive_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 878171DB2B4CAF9500F7399C /* JBPrimitive_c.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		87168C302B4C807C00DC6AB9 /* JBException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBException.cpp; sourceTree = "<group>"; };
 		87168C312B4C807C00DC6AB9 /* JBException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JBException.hpp; sourceTree = "<group>"; };
 		874CABEB2B4CA2A80002EC15 /* libxpc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxpc.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/lib/system/libxpc.tbd; sourceTree = DEVELOPER_DIR; };
+		878171D22B4CA7CD00F7399C /* JBExploit_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBExploit_c.cpp; sourceTree = "<group>"; };
+		878171D32B4CA7CD00F7399C /* JBExploit_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBExploit_c.h; sourceTree = "<group>"; };
+		878171D62B4CAA4400F7399C /* JBOffsets_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBOffsets_c.cpp; sourceTree = "<group>"; };
+		878171D72B4CAA4400F7399C /* JBOffsets_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBOffsets_c.h; sourceTree = "<group>"; };
+		878171DA2B4CAF9500F7399C /* JBPrimitive_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JBPrimitive_c.cpp; sourceTree = "<group>"; };
+		878171DB2B4CAF9500F7399C /* JBPrimitive_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBPrimitive_c.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +82,22 @@
 			isa = PBXGroup;
 			children = (
 				87168C1A2B4C710A00DC6AB9 /* JBKit.h */,
-				87168C2A2B4C720500DC6AB9 /* JBOffsets.hpp */,
-				87168C292B4C720500DC6AB9 /* JBOffsets.cpp */,
 				87168C2D2B4C75D900DC6AB9 /* JBTypes.h */,
 				87168C2E2B4C7FF800DC6AB9 /* JBMacros.h */,
+				87168C2A2B4C720500DC6AB9 /* JBOffsets.hpp */,
+				87168C292B4C720500DC6AB9 /* JBOffsets.cpp */,
+				878171D72B4CAA4400F7399C /* JBOffsets_c.h */,
+				878171D62B4CAA4400F7399C /* JBOffsets_c.cpp */,
 				87168C312B4C807C00DC6AB9 /* JBException.hpp */,
 				87168C302B4C807C00DC6AB9 /* JBException.cpp */,
 				87168C222B4C71B400DC6AB9 /* JBExploit.hpp */,
 				87168C212B4C71B400DC6AB9 /* JBExploit.cpp */,
+				878171D32B4CA7CD00F7399C /* JBExploit_c.h */,
+				878171D22B4CA7CD00F7399C /* JBExploit_c.cpp */,
 				87168C262B4C71DD00DC6AB9 /* JBPrimitive.hpp */,
 				87168C252B4C71DD00DC6AB9 /* JBPrimitive.cpp */,
+				878171DB2B4CAF9500F7399C /* JBPrimitive_c.h */,
+				878171DA2B4CAF9500F7399C /* JBPrimitive_c.cpp */,
 			);
 			path = JBKit;
 			sourceTree = "<group>";
@@ -99,12 +117,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878171D52B4CA7CD00F7399C /* JBExploit_c.h in Headers */,
 				87168C242B4C71B400DC6AB9 /* JBExploit.hpp in Headers */,
+				878171D92B4CAA4400F7399C /* JBOffsets_c.h in Headers */,
 				87168C2C2B4C720500DC6AB9 /* JBOffsets.hpp in Headers */,
 				87168C342B4C930F00DC6AB9 /* JBTypes.h in Headers */,
 				87168C282B4C71DD00DC6AB9 /* JBPrimitive.hpp in Headers */,
 				87168C352B4C931700DC6AB9 /* JBMacros.h in Headers */,
 				87168C332B4C807C00DC6AB9 /* JBException.hpp in Headers */,
+				878171DD2B4CAF9500F7399C /* JBPrimitive_c.h in Headers */,
 				87168C1B2B4C710A00DC6AB9 /* JBKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878171D42B4CA7CD00F7399C /* JBExploit_c.cpp in Sources */,
 				87168C232B4C71B400DC6AB9 /* JBExploit.cpp in Sources */,
+				878171DC2B4CAF9500F7399C /* JBPrimitive_c.cpp in Sources */,
+				878171D82B4CAA4400F7399C /* JBOffsets_c.cpp in Sources */,
 				87168C2B2B4C720500DC6AB9 /* JBOffsets.cpp in Sources */,
 				87168C272B4C71DD00DC6AB9 /* JBPrimitive.cpp in Sources */,
 				87168C322B4C807C00DC6AB9 /* JBException.cpp in Sources */,

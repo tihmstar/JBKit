@@ -12,6 +12,9 @@
 #include <JBKit/JBTypes.h>
 #include <JBKit/JBOffsets.hpp>
 
+#include <vector>
+#include <iostream>
+
 namespace JBKit {
 
 class JBPrimitive{
@@ -23,6 +26,9 @@ public:
 #pragma mark public exploit init/cleanup
     virtual bool init(JBOffsets offsets, readfunc_t func_read, writefunc_t func_write, execfunc_t func_exec = NULL) = 0;
     virtual void cleanup() = 0;
+    
+#pragma mark infos
+    virtual const char *primitiveName() = 0;
     
 #pragma mark availability infos
     bool hasRead() const noexcept;
@@ -44,7 +50,16 @@ public:
     virtual void write32(kptr_t kaddr, uint32_t val);
     virtual size_t write_generic(kptr_t kaddr, const void *srcbuf, size_t size, BOOLEAN honorSizeLimit = FALSE);
 
-    virtual void execute(kptr_t kaddr, callargs_t args = {});
+    virtual kptr_t execute(kptr_t kaddr, callargs_t args = {});
+    
+#pragma mark transfer
+    virtual void sendPrimitive(mach_port_t dst); //port with send right
+    virtual void recvPrimitive(mach_port_t src); //port with recv right
+
+#pragma mark static
+    static void registerPrimitive(JBPrimitive *prim) noexcept;
+    static JBPrimitive *getPrimitiveWithName(const char *name) noexcept;
+    static std::vector<std::string> listRegisteredPrimitives() noexcept;
 };
 
 }

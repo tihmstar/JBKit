@@ -8,6 +8,9 @@
 #include "JBPrimitive.hpp"
 #include "JBMacros.h"
 
+#include <map>
+#include <mutex>
+
 using namespace JBKit;
 
 #pragma mark constructor
@@ -231,6 +234,47 @@ size_t JBPrimitive::write_generic(kptr_t kaddr, const void *srcbuf, size_t size,
     return didWrite;
 }
 
-void JBPrimitive::execute(kptr_t kaddr, callargs_t args){
+kptr_t JBPrimitive::execute(kptr_t kaddr, callargs_t args){
     retcustomerror(JBException_primitive_unavailable, "execute is not implemented by the primitive");
+}
+
+#pragma mark transfer
+void JBPrimitive::sendPrimitive(mach_port_t dst){
+    retcustomerror(JBException_primitive_unavailable, "sendPrimitive is not implemented by the primitive");
+}
+
+void JBPrimitive::recvPrimitive(mach_port_t src){
+    retcustomerror(JBException_primitive_unavailable, "recvPrimitive is not implemented by the primitive");
+}
+
+#pragma mark static
+static std::map<std::string, JBPrimitive*> gPrimitives;
+static std::mutex gPrimitivesLck;
+void JBPrimitive::registerPrimitive(JBPrimitive *prim) noexcept {
+    std::unique_lock<std::mutex> ul(gPrimitivesLck);
+    auto old = gPrimitives.find(prim->primitiveName());
+    if (old != gPrimitives.end()){
+        JBPrimitive *olde = old->second;
+        gPrimitives.erase(old);
+        safeDelete(olde);
+    }
+    gPrimitives[prim->primitiveName()] = prim;
+}
+
+JBPrimitive *JBPrimitive::getPrimitiveWithName(const char *name) noexcept{
+    std::unique_lock<std::mutex> ul(gPrimitivesLck);
+    try {
+        return gPrimitives.at(name);
+    } catch (...) {
+        return NULL;
+    }
+}
+
+std::vector<std::string> JBPrimitive::listRegisteredPrimitives() noexcept{
+    std::unique_lock<std::mutex> ul(gPrimitivesLck);
+    std::vector<std::string> ret;
+    for (auto p : gPrimitives) {
+        ret.push_back(p.first);
+    }
+    return ret;
 }
