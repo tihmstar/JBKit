@@ -9,6 +9,7 @@
 #include "JBMacros.h"
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <xpc/xpc.h>
 
 extern "C" xpc_object_t xpc_create_from_plist(void *data, size_t size);
 

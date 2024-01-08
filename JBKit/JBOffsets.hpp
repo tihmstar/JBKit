@@ -11,7 +11,8 @@
 
 #include <JBKit/JBTypes.h>
 #include <mach/mach.h>
-#include <xpc/xpc.h>
+
+typedef void * xpc_object_t;
 
 namespace JBKit {
 
