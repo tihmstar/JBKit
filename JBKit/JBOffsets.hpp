@@ -11,13 +11,10 @@
 
 #include <JBKit/JBTypes.h>
 #include <mach/mach.h>
-#include <xpc/xpc.h>
 
 namespace JBKit {
 
 class JBOffsets {
-private:
-    xpc_object_t _xdict;
     
 public:
     JBOffsets();
